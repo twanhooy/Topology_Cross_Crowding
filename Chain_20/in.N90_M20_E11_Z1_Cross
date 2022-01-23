@@ -1,4 +1,3 @@
-50
 #######################################################################
 ##                                                                   ##
 ##                  Single chain_4000 beads                          ##
@@ -166,6 +165,47 @@ variable	epsilon2 equal ${epsilon}
 
 variable	epsilon_11 equal ${epsilon1}
 
+variable	epsilon_24 equal ${epsilon2}
+variable	epsilon_35 equal ${epsilon2}
+variable	epsilon_68 equal ${epsilon2}
+variable	epsilon_79 equal ${epsilon2}
+variable	epsilon_1012 equal ${epsilon2}
+variable	epsilon_1113 equal ${epsilon2}
+variable	epsilon_1416 equal ${epsilon2}
+variable	epsilon_1517 equal ${epsilon2}
+variable	epsilon_1820 equal ${epsilon2}
+variable	epsilon_1921 equal ${epsilon2}
+variable	epsilon_2224 equal ${epsilon2}
+variable	epsilon_2325 equal ${epsilon2}
+variable	epsilon_2628 equal ${epsilon2}
+variable	epsilon_2729 equal ${epsilon2}
+variable	epsilon_3032 equal ${epsilon2}
+variable	epsilon_3133 equal ${epsilon2}
+variable	epsilon_3436 equal ${epsilon2}
+variable	epsilon_3537 equal ${epsilon2}
+variable	epsilon_3840 equal ${epsilon2}
+variable	epsilon_3941 equal ${epsilon2}
+variable	epsilon_4244 equal ${epsilon2}
+variable	epsilon_4345 equal ${epsilon2}
+variable	epsilon_4648 equal ${epsilon2}
+variable	epsilon_4749 equal ${epsilon2}
+variable	epsilon_5052 equal ${epsilon2}
+variable	epsilon_5153 equal ${epsilon2}
+variable	epsilon_5456 equal ${epsilon2}
+variable	epsilon_5557 equal ${epsilon2}
+variable	epsilon_5860 equal ${epsilon2}
+variable	epsilon_5961 equal ${epsilon2}
+variable	epsilon_6264 equal ${epsilon2}
+variable	epsilon_6365 equal ${epsilon2}
+variable	epsilon_6668 equal ${epsilon2}
+variable	epsilon_6769 equal ${epsilon2}
+variable	epsilon_7072 equal ${epsilon2}
+variable	epsilon_7173 equal ${epsilon2}
+variable	epsilon_7476 equal ${epsilon2}
+variable	epsilon_7577 equal ${epsilon2}
+variable	epsilon_7880 equal ${epsilon2}
+variable	epsilon_7981 equal ${epsilon2}
+
 
 
 
@@ -187,6 +227,47 @@ bond_coeff      1       30.0    1.5     1.0     1.0
 
 pair_style lj/smooth/linear 2.5
 pair_coeff	* * ${epsilon_11} 1
+
+pair_coeff	2 4 ${epsilon_24} 1
+pair_coeff	3 5 ${epsilon_35} 1
+pair_coeff	6 8 ${epsilon_68} 1
+pair_coeff	7 9 ${epsilon_79} 1
+pair_coeff	10 12 ${epsilon_1012} 1
+pair_coeff	11 13 ${epsilon_1113} 1
+pair_coeff	14 16 ${epsilon_1416} 1
+pair_coeff	15 17 ${epsilon_1517} 1
+pair_coeff	18 20 ${epsilon_1820} 1
+pair_coeff	19 21 ${epsilon_1921} 1
+pair_coeff	22 24 ${epsilon_2224} 1
+pair_coeff	23 25 ${epsilon_2325} 1
+pair_coeff	26 28 ${epsilon_2628} 1
+pair_coeff	27 29 ${epsilon_2729} 1
+pair_coeff	30 32 ${epsilon_3032} 1
+pair_coeff	31 33 ${epsilon_3133} 1
+pair_coeff	34 36 ${epsilon_3436} 1
+pair_coeff	35 37 ${epsilon_3537} 1
+pair_coeff	38 40 ${epsilon_3840} 1
+pair_coeff	39 41 ${epsilon_3941} 1
+pair_coeff	42 44 ${epsilon_4244} 1
+pair_coeff	43 45 ${epsilon_4345} 1
+pair_coeff	46 48 ${epsilon_4648} 1
+pair_coeff	47 49 ${epsilon_4749} 1
+pair_coeff	50 52 ${epsilon_5052} 1
+pair_coeff	51 53 ${epsilon_5153} 1
+pair_coeff	54 56 ${epsilon_5456} 1
+pair_coeff	55 57 ${epsilon_5557} 1
+pair_coeff	58 60 ${epsilon_5860} 1
+pair_coeff	59 61 ${epsilon_5961} 1
+pair_coeff	62 64 ${epsilon_6264} 1
+pair_coeff	63 65 ${epsilon_6365} 1
+pair_coeff	66 68 ${epsilon_6668} 1
+pair_coeff	67 69 ${epsilon_6769} 1
+pair_coeff	70 72 ${epsilon_7072} 1
+pair_coeff	71 73 ${epsilon_7173} 1
+pair_coeff	74 76 ${epsilon_7476} 1
+pair_coeff	75 77 ${epsilon_7577} 1
+pair_coeff	78 80 ${epsilon_7880} 1
+pair_coeff	79 81 ${epsilon_7981} 1
 
 
 #special_bonds	lj 0.0 0.0 0.0

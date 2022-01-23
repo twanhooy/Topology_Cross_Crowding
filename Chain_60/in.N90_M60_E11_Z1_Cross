@@ -1,4 +1,3 @@
-50
 #######################################################################
 ##                                                                   ##
 ##                  Single chain_4000 beads                          ##
@@ -149,7 +148,7 @@ variable 	 y10_4 equal c_xAtom[900][2]
 variable 	 z10_4 equal c_xAtom[900][3]
 
 
-dump		total all custom ${Ndump} positions_cross_c_20.lammpstrj id type x y z 
+dump		total all custom ${Ndump} positions_cross_c_60.lammpstrj id type x y z 
 dump_modify	total sort id
 
 
@@ -165,6 +164,127 @@ variable	epsilon1 equal 0.1
 variable	epsilon2 equal ${epsilon}
 
 variable	epsilon_11 equal ${epsilon1}
+
+variable	epsilon_24 equal ${epsilon2}
+variable	epsilon_35 equal ${epsilon2}
+variable	epsilon_68 equal ${epsilon2}
+variable	epsilon_79 equal ${epsilon2}
+variable	epsilon_1012 equal ${epsilon2}
+variable	epsilon_1113 equal ${epsilon2}
+variable	epsilon_1416 equal ${epsilon2}
+variable	epsilon_1517 equal ${epsilon2}
+variable	epsilon_1820 equal ${epsilon2}
+variable	epsilon_1921 equal ${epsilon2}
+variable	epsilon_2224 equal ${epsilon2}
+variable	epsilon_2325 equal ${epsilon2}
+variable	epsilon_2628 equal ${epsilon2}
+variable	epsilon_2729 equal ${epsilon2}
+variable	epsilon_3032 equal ${epsilon2}
+variable	epsilon_3133 equal ${epsilon2}
+variable	epsilon_3436 equal ${epsilon2}
+variable	epsilon_3537 equal ${epsilon2}
+variable	epsilon_3840 equal ${epsilon2}
+variable	epsilon_3941 equal ${epsilon2}
+variable	epsilon_4244 equal ${epsilon2}
+variable	epsilon_4345 equal ${epsilon2}
+variable	epsilon_4648 equal ${epsilon2}
+variable	epsilon_4749 equal ${epsilon2}
+variable	epsilon_5052 equal ${epsilon2}
+variable	epsilon_5153 equal ${epsilon2}
+variable	epsilon_5456 equal ${epsilon2}
+variable	epsilon_5557 equal ${epsilon2}
+variable	epsilon_5860 equal ${epsilon2}
+variable	epsilon_5961 equal ${epsilon2}
+variable	epsilon_6264 equal ${epsilon2}
+variable	epsilon_6365 equal ${epsilon2}
+variable	epsilon_6668 equal ${epsilon2}
+variable	epsilon_6769 equal ${epsilon2}
+variable	epsilon_7072 equal ${epsilon2}
+variable	epsilon_7173 equal ${epsilon2}
+variable	epsilon_7476 equal ${epsilon2}
+variable	epsilon_7577 equal ${epsilon2}
+variable	epsilon_7880 equal ${epsilon2}
+variable	epsilon_7981 equal ${epsilon2}
+variable	epsilon_8284 equal ${epsilon2}
+variable	epsilon_8385 equal ${epsilon2}
+variable	epsilon_8688 equal ${epsilon2}
+variable	epsilon_8789 equal ${epsilon2}
+variable	epsilon_9092 equal ${epsilon2}
+variable	epsilon_9193 equal ${epsilon2}
+variable	epsilon_9496 equal ${epsilon2}
+variable	epsilon_9597 equal ${epsilon2}
+variable	epsilon_98100 equal ${epsilon2}
+variable	epsilon_99101 equal ${epsilon2}
+variable	epsilon_102104 equal ${epsilon2}
+variable	epsilon_103105 equal ${epsilon2}
+variable	epsilon_106108 equal ${epsilon2}
+variable	epsilon_107109 equal ${epsilon2}
+variable	epsilon_110112 equal ${epsilon2}
+variable	epsilon_111113 equal ${epsilon2}
+variable	epsilon_114116 equal ${epsilon2}
+variable	epsilon_115117 equal ${epsilon2}
+variable	epsilon_118120 equal ${epsilon2}
+variable	epsilon_119121 equal ${epsilon2}
+variable	epsilon_122124 equal ${epsilon2}
+variable	epsilon_123125 equal ${epsilon2}
+variable	epsilon_126128 equal ${epsilon2}
+variable	epsilon_127129 equal ${epsilon2}
+variable	epsilon_130132 equal ${epsilon2}
+variable	epsilon_131133 equal ${epsilon2}
+variable	epsilon_134136 equal ${epsilon2}
+variable	epsilon_135137 equal ${epsilon2}
+variable	epsilon_138140 equal ${epsilon2}
+variable	epsilon_139141 equal ${epsilon2}
+variable	epsilon_142144 equal ${epsilon2}
+variable	epsilon_143145 equal ${epsilon2}
+variable	epsilon_146148 equal ${epsilon2}
+variable	epsilon_147149 equal ${epsilon2}
+variable	epsilon_150152 equal ${epsilon2}
+variable	epsilon_151153 equal ${epsilon2}
+variable	epsilon_154156 equal ${epsilon2}
+variable	epsilon_155157 equal ${epsilon2}
+variable	epsilon_158160 equal ${epsilon2}
+variable	epsilon_159161 equal ${epsilon2}
+variable	epsilon_162164 equal ${epsilon2}
+variable	epsilon_163165 equal ${epsilon2}
+variable	epsilon_166168 equal ${epsilon2}
+variable	epsilon_167169 equal ${epsilon2}
+variable	epsilon_170172 equal ${epsilon2}
+variable	epsilon_171173 equal ${epsilon2}
+variable	epsilon_174176 equal ${epsilon2}
+variable	epsilon_175177 equal ${epsilon2}
+variable	epsilon_178180 equal ${epsilon2}
+variable	epsilon_179181 equal ${epsilon2}
+variable	epsilon_182184 equal ${epsilon2}
+variable	epsilon_183185 equal ${epsilon2}
+variable	epsilon_186188 equal ${epsilon2}
+variable	epsilon_187189 equal ${epsilon2}
+variable	epsilon_190192 equal ${epsilon2}
+variable	epsilon_191193 equal ${epsilon2}
+variable	epsilon_194196 equal ${epsilon2}
+variable	epsilon_195197 equal ${epsilon2}
+variable	epsilon_198200 equal ${epsilon2}
+variable	epsilon_199201 equal ${epsilon2}
+variable	epsilon_202204 equal ${epsilon2}
+variable	epsilon_203205 equal ${epsilon2}
+variable	epsilon_206208 equal ${epsilon2}
+variable	epsilon_207209 equal ${epsilon2}
+variable	epsilon_210212 equal ${epsilon2}
+variable	epsilon_211213 equal ${epsilon2}
+variable	epsilon_214216 equal ${epsilon2}
+variable	epsilon_215217 equal ${epsilon2}
+variable	epsilon_218220 equal ${epsilon2}
+variable	epsilon_219221 equal ${epsilon2}
+variable	epsilon_222224 equal ${epsilon2}
+variable	epsilon_223225 equal ${epsilon2}
+variable	epsilon_226228 equal ${epsilon2}
+variable	epsilon_227229 equal ${epsilon2}
+variable	epsilon_230232 equal ${epsilon2}
+variable	epsilon_231233 equal ${epsilon2}
+variable	epsilon_234236 equal ${epsilon2}
+variable	epsilon_235237 equal ${epsilon2}
+variable	epsilon_238240 equal ${epsilon2}
+variable	epsilon_239241 equal ${epsilon2}
 
 
 
@@ -187,6 +307,127 @@ bond_coeff      1       30.0    1.5     1.0     1.0
 
 pair_style lj/smooth/linear 2.5
 pair_coeff	* * ${epsilon_11} 1
+
+pair_coeff	2 4 ${epsilon_24} 1
+pair_coeff	3 5 ${epsilon_35} 1
+pair_coeff	6 8 ${epsilon_68} 1
+pair_coeff	7 9 ${epsilon_79} 1
+pair_coeff	10 12 ${epsilon_1012} 1
+pair_coeff	11 13 ${epsilon_1113} 1
+pair_coeff	14 16 ${epsilon_1416} 1
+pair_coeff	15 17 ${epsilon_1517} 1
+pair_coeff	18 20 ${epsilon_1820} 1
+pair_coeff	19 21 ${epsilon_1921} 1
+pair_coeff	22 24 ${epsilon_2224} 1
+pair_coeff	23 25 ${epsilon_2325} 1
+pair_coeff	26 28 ${epsilon_2628} 1
+pair_coeff	27 29 ${epsilon_2729} 1
+pair_coeff	30 32 ${epsilon_3032} 1
+pair_coeff	31 33 ${epsilon_3133} 1
+pair_coeff	34 36 ${epsilon_3436} 1
+pair_coeff	35 37 ${epsilon_3537} 1
+pair_coeff	38 40 ${epsilon_3840} 1
+pair_coeff	39 41 ${epsilon_3941} 1
+pair_coeff	42 44 ${epsilon_4244} 1
+pair_coeff	43 45 ${epsilon_4345} 1
+pair_coeff	46 48 ${epsilon_4648} 1
+pair_coeff	47 49 ${epsilon_4749} 1
+pair_coeff	50 52 ${epsilon_5052} 1
+pair_coeff	51 53 ${epsilon_5153} 1
+pair_coeff	54 56 ${epsilon_5456} 1
+pair_coeff	55 57 ${epsilon_5557} 1
+pair_coeff	58 60 ${epsilon_5860} 1
+pair_coeff	59 61 ${epsilon_5961} 1
+pair_coeff	62 64 ${epsilon_6264} 1
+pair_coeff	63 65 ${epsilon_6365} 1
+pair_coeff	66 68 ${epsilon_6668} 1
+pair_coeff	67 69 ${epsilon_6769} 1
+pair_coeff	70 72 ${epsilon_7072} 1
+pair_coeff	71 73 ${epsilon_7173} 1
+pair_coeff	74 76 ${epsilon_7476} 1
+pair_coeff	75 77 ${epsilon_7577} 1
+pair_coeff	78 80 ${epsilon_7880} 1
+pair_coeff	79 81 ${epsilon_7981} 1
+pair_coeff	82 84 ${epsilon_8284} 1
+pair_coeff	83 85 ${epsilon_8385} 1
+pair_coeff	86 88 ${epsilon_8688} 1
+pair_coeff	87 89 ${epsilon_8789} 1
+pair_coeff	90 92 ${epsilon_9092} 1
+pair_coeff	91 93 ${epsilon_9193} 1
+pair_coeff	94 96 ${epsilon_9496} 1
+pair_coeff	95 97 ${epsilon_9597} 1
+pair_coeff	98 100 ${epsilon_98100} 1
+pair_coeff	99 101 ${epsilon_99101} 1
+pair_coeff	102 104 ${epsilon_102104} 1
+pair_coeff	103 105 ${epsilon_103105} 1
+pair_coeff	106 108 ${epsilon_106108} 1
+pair_coeff	107 109 ${epsilon_107109} 1
+pair_coeff	110 112 ${epsilon_110112} 1
+pair_coeff	111 113 ${epsilon_111113} 1
+pair_coeff	114 116 ${epsilon_114116} 1
+pair_coeff	115 117 ${epsilon_115117} 1
+pair_coeff	118 120 ${epsilon_118120} 1
+pair_coeff	119 121 ${epsilon_119121} 1
+pair_coeff	122 124 ${epsilon_122124} 1
+pair_coeff	123 125 ${epsilon_123125} 1
+pair_coeff	126 128 ${epsilon_126128} 1
+pair_coeff	127 129 ${epsilon_127129} 1
+pair_coeff	130 132 ${epsilon_130132} 1
+pair_coeff	131 133 ${epsilon_131133} 1
+pair_coeff	134 136 ${epsilon_134136} 1
+pair_coeff	135 137 ${epsilon_135137} 1
+pair_coeff	138 140 ${epsilon_138140} 1
+pair_coeff	139 141 ${epsilon_139141} 1
+pair_coeff	142 144 ${epsilon_142144} 1
+pair_coeff	143 145 ${epsilon_143145} 1
+pair_coeff	146 148 ${epsilon_146148} 1
+pair_coeff	147 149 ${epsilon_147149} 1
+pair_coeff	150 152 ${epsilon_150152} 1
+pair_coeff	151 153 ${epsilon_151153} 1
+pair_coeff	154 156 ${epsilon_154156} 1
+pair_coeff	155 157 ${epsilon_155157} 1
+pair_coeff	158 160 ${epsilon_158160} 1
+pair_coeff	159 161 ${epsilon_159161} 1
+pair_coeff	162 164 ${epsilon_162164} 1
+pair_coeff	163 165 ${epsilon_163165} 1
+pair_coeff	166 168 ${epsilon_166168} 1
+pair_coeff	167 169 ${epsilon_167169} 1
+pair_coeff	170 172 ${epsilon_170172} 1
+pair_coeff	171 173 ${epsilon_171173} 1
+pair_coeff	174 176 ${epsilon_174176} 1
+pair_coeff	175 177 ${epsilon_175177} 1
+pair_coeff	178 180 ${epsilon_178180} 1
+pair_coeff	179 181 ${epsilon_179181} 1
+pair_coeff	182 184 ${epsilon_182184} 1
+pair_coeff	183 185 ${epsilon_183185} 1
+pair_coeff	186 188 ${epsilon_186188} 1
+pair_coeff	187 189 ${epsilon_187189} 1
+pair_coeff	190 192 ${epsilon_190192} 1
+pair_coeff	191 193 ${epsilon_191193} 1
+pair_coeff	194 196 ${epsilon_194196} 1
+pair_coeff	195 197 ${epsilon_195197} 1
+pair_coeff	198 200 ${epsilon_198200} 1
+pair_coeff	199 201 ${epsilon_199201} 1
+pair_coeff	202 204 ${epsilon_202204} 1
+pair_coeff	203 205 ${epsilon_203205} 1
+pair_coeff	206 208 ${epsilon_206208} 1
+pair_coeff	207 209 ${epsilon_207209} 1
+pair_coeff	210 212 ${epsilon_210212} 1
+pair_coeff	211 213 ${epsilon_211213} 1
+pair_coeff	214 216 ${epsilon_214216} 1
+pair_coeff	215 217 ${epsilon_215217} 1
+pair_coeff	218 220 ${epsilon_218220} 1
+pair_coeff	219 221 ${epsilon_219221} 1
+pair_coeff	222 224 ${epsilon_222224} 1
+pair_coeff	223 225 ${epsilon_223225} 1
+pair_coeff	226 228 ${epsilon_226228} 1
+pair_coeff	227 229 ${epsilon_227229} 1
+pair_coeff	230 232 ${epsilon_230232} 1
+pair_coeff	231 233 ${epsilon_231233} 1
+pair_coeff	234 236 ${epsilon_234236} 1
+pair_coeff	235 237 ${epsilon_235237} 1
+pair_coeff	238 240 ${epsilon_238240} 1
+pair_coeff	239 241 ${epsilon_239241} 1
 
 
 #special_bonds	lj 0.0 0.0 0.0
